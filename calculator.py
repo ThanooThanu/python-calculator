@@ -3,7 +3,7 @@ class Calculator:
         return a + b
 
     def subtract(self, a, b):
-        return b - a
+        return a - b
 
     def multiply(self, a, b):
         result = 0
@@ -14,7 +14,7 @@ class Calculator:
     def divide(self, a, b):
         result = 0
         while a >= b:
-            a = self.subtract(b, a)
+            a = self.subtract(a, b)
             result += 1
         return result
     
